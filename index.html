@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livraria Online</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ficção Científica</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Tecnologia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Negócios</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Literatura</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Livraria Online" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Buscando seu próximo livro?</h2>
+    <p class="banner__texto">Explore nossa coleção para encontrar a próxima leitura!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Pesquise por título ou autor">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides com livros reais -->
+        <div class="swiper-slide"><img src="o lado feio do amor.jpg" alt="Capa do livro O Lado Feio do Amor"></div>
+        <div class="swiper-slide"><img src="a bruxa.jpg" alt="Capa do livro A Bruxa Não Vai Para a Fogueira"></div>
+        <div class="swiper-slide"><img src="e assim que acaba.jpg" alt="Capa do livro Duna"></div>
+
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="destaque">
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Destaque da Semana</h3>
+          <h2 class="descrição__titulo-livro">O Lado Feio do Amor</h2>
+          <p class="descrição__texto">Colleen Hoover nos traz uma emocionante história de amor, com reviravoltas profundas e dolorosas.</p>
+        </div>
+        <img src="o lado feio do amor.jpg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Inteligência Artificial</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Gestão de Tempo</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Ficção Distópica</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Ciência Popular</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">História</a></li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Assine nossa newsletter</h2>
+    <p class="contato__texto">Receba novidades sobre lançamentos e promoções diretamente no seu e-mail.</p>
+    <input type="email" placeholder="
